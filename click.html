@@ -1,0 +1,12 @@
+<SCRIPT LANGUAGE=”JScript”>
+function checkCancel() {
+if (window.event.shiftKey)
+window.event.cancelBubble = true;
+}
+function showSrc() {
+if (window.event.srcElement.tagName == “IMG”)
+alert(window.event.srcElement.src);
+}
+</SCRIPT>
+<BODY onclick=”showSrc()”>
+<IMG onclick=”checkCancel()” src=”/sample.gif”>4.clientX
